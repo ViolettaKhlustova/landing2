@@ -1,0 +1,168 @@
+:root {
+  --black: #333333;
+  --blue: #5DB7DE;
+  --purple: #3D348B;
+  --white: #ffffff;
+  --radius: 20px;
+  --font: 'PT Sans', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/*Container*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  width: 1296px;
+  margin: 40px 312px;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerNav {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.headerNavText {
+  color: var(--black);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.headerSearch {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.headerSearchInput {
+  height: 24px;
+  border-width: 0px ;
+  border-bottom: 1px solid #000000;
+  opacity: 0.2;
+  outline: none;
+}
+.headerLanguage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headerLanguageSelect {
+  border-width: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--black);
+  -webkit-appearance: none;
+}
+.headerLanguageSelectIcon {
+  cursor: pointer;
+}
+
+/*FirstScreen*/
+.firstScreen {
+  display: flex;
+  background-image: url("img/firstScreenImgBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--white);
+  font-family: var(--font);
+  font-style: normal;
+}
+.firstScreen-aboutCompanyText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 150px 0px 150px 300px;
+  align-self: stretch;
+}
+.firstScreen-aboutCompanyTextTitle {
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.firstScreen-aboutCompanyTextSubtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 60px;
+}
+.firstScreen-aboutCompanyButton {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.firstScreen-aboutCompanyButtonText {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.firstScreen-aboutCompanyButtonIcon {
+  padding-left: 15px;
+}
+
+/*Services*/
+.services {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2, 306px);
+  grid-template-rows: repeat(2, 250px);
+  margin: 100px 5px 50px 130px;
+  gap: 24px;
+}
+.servicesItem {
+  border-radius: var(--radius);
+  background: var(--blue);
+  display: flex;
+  padding: 30px 35px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.servicesItemTextTitle {
+  align-self: stretch;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+
+}
+.servicesItemTextSubtitle {
+  align-self: stretch;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 26px;
+}

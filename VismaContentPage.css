@@ -1,0 +1,251 @@
+:root {
+    --black: #333333;
+    --blue: #5DB7DE;
+    --purple: #3D348B;
+    --light-purple: #5a529c;
+    --light-grey-purple: #f5f5f9;
+    --white: #ffffff;
+    --radius: 20px;
+    --radius2: 10px;
+    --font: 'PT Sans', sans-serif;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+  
+/*Container*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+  
+/*Header Container*/
+.header {
+  display: flex;
+  width: 1296px;
+  margin: 40px 312px;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerNav {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.headerNavText {
+  color: var(--black);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.headerSearch {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.headerSearchInput {
+  height: 24px;
+  border-width: 0px ;
+  border-bottom: 1px solid #000000;
+  opacity: 0.2;
+  outline: none;
+}
+.headerLanguage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headerLanguageSelect {
+  border-width: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--black);
+  -webkit-appearance: none;
+}
+.headerLanguageSelectIcon {
+  cursor: pointer;
+}
+
+
+/*Breadcrumbs Container*/
+.breadcrumbs {
+  height: 70px;
+  background-color: var(--light-grey-purple);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+}
+.breadcrumbsText {
+  margin: 0 312px;
+}
+.breadcrumbsTextTitle {
+  color: var(--black);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+/*Arcticle Container*/
+.article {
+  display: flex;
+  justify-content: center;
+  max-width: 856px;
+  margin-top: 80px;
+}
+.articleTitle {
+    color: var(--black);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+}
+.articleTextItem {
+    padding-top: 60px;
+}
+.articleTextSubtitle {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: 40px;
+}
+.articleTextSubtitle:first-child {
+    padding-top: 0;
+}
+#articleSubtitle {
+    padding-top: 20px;
+}
+.articleSubtitle1 {
+    padding-top: 0;
+}
+/*Footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.footerPre {
+  display: flex;
+  padding: 45px 312px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-purple);
+}
+.footerPreAddress {
+  padding-left: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footerPreAddressText {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.footerPreVismaLogo {
+  align-items: center;
+}
+.footerPreNumberEmail {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding-right: 70px;
+}
+.footerPreNumber {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footerPreNumberText {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.footerPreEmail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footerPreEmailText {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.footerLast {
+  display: flex;
+  background-color: var(--purple);
+  gap: 24px;
+  flex-direction: row;
+  justify-content: center;
+}
+.footerLastItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 80px;
+}
+.footerLastTitle {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.footerLastSubtitle {
+  color: var(--white);
+  font-size: 14px;  
+  font-weight: 400;
+  line-height: 19px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+/*Copyright*/
+.copyright {
+  background-color: var(--purple);
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.copyrightText {
+  color: var(--white);
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
